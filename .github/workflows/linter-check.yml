@@ -1,0 +1,22 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  test-linter:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 🎉 🎉 🎉"
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install
+        run: |
+          make install
+        env:
+          CI: true  
+      - name: Run Linter
+        run: |
+          make lint
+      - run: echo "🍏 This job's status is ${{ job.status }}."
