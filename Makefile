@@ -4,5 +4,8 @@ install: # первое клонирование репозитория
 brain-games: # исполнение скрипта brain-games.js 
 	node bin/brain-games.js
 
-publish: #
+publish: # проверяет публикацию изменений
 	npm publish --dry-run
+
+lint: # проверка кода линтером
+	npx eslint .
