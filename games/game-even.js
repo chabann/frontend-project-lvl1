@@ -1,5 +1,5 @@
 import {
-    sayHello, roundCount, playerAnswer, max, min, getRandom, endGame,
+    sayHello, roundCount, playerAnswer, getRandom, endGame,
 } from '../src/index.js';
 
 const playGame = () => {
@@ -11,7 +11,7 @@ const playGame = () => {
     let correctAnswer = '';
 
     while (counter < roundCount) {
-        const number = getRandom(min, max);
+        const number = getRandom();
 
         if (number % 2) {
             correctAnswer = 'no';

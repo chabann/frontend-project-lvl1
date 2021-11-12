@@ -1,5 +1,9 @@
 import readlineSync from 'readline-sync';
 
+const roundCount = 3;
+const max = 100;
+const min = 0;
+
 const sayHello = () => {
     console.log('Welcome to the Brain Games!');
     const playerName = readlineSync.question('May I have your name? ');
@@ -25,19 +29,13 @@ const playerAnswer = (number, correctAnswer, playerName) => {
     return result;
 };
 
-const getRandom = (min, max) => {
-    return Math.floor(Math.random() * (max - min)) + min;
-};
+const getRandom = (minV = min, maxV = max) => (Math.floor(Math.random() * (maxV - minV)) + minV);
 
 const endGame = (counter, playerName) => {
     if (counter === roundCount) {
         console.log(`Congratulations, ${playerName}!`);
     }
 };
-
-const roundCount = 3;
-const max = 100;
-const min = 0;
 
 export {
     sayHello, roundCount, max, min, playerAnswer, getRandom, endGame,
