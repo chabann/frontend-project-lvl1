@@ -14,3 +14,7 @@
 **brain-even**
 
 [![asciicast](https://asciinema.org/a/qTJu15eNdWwswnObGTFvuaRvY.svg)](https://asciinema.org/a/qTJu15eNdWwswnObGTFvuaRvY)
+
+**brain-calc**
+
+[![asciicast](https://asciinema.org/a/DOgkT2UrdmDbQJiPagCCcypUm.svg)](https://asciinema.org/a/DOgkT2UrdmDbQJiPagCCcypUm)
