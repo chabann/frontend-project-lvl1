@@ -9,6 +9,8 @@
 
 ![example workflow](https://github.com/chabann/frontend-project-lvl1/actions/workflows/linter-check.yml/badge.svg)
 
+Данный проект содержит 5 логических игр из 3 раундов, игра считается успешно пройденной, если дан правильный ответ во всех раундах, при неправильном ответе игра прерывается
+
 #### Демонстрация установки и процесса игр ####
 
 **brain-even**
