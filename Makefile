@@ -13,6 +13,9 @@ brain-calc: # исполнение скрипта brain-calc.js
 brain-gcd: # исполнение скрипта brain-gcd.js 
 	node bin/brain-gcd.js
 
+brain-progression: # исполнение скрипта brain-progression.js 
+	node bin/brain-progression.js
+
 publish: # проверяет публикацию изменений
 	npm publish --dry-run
 

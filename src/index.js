@@ -45,6 +45,29 @@ const gcdRec = (a, b) => {
     return Math.abs(a);
 };
 
+const getProgression = (len) => {
+    const firstElem = getRandom(1, 50);
+    const step = getRandom(2, 10);
+
+    const spaceIndex = getRandom(1, len);
+    let spacedElem = 0;
+
+    let progresChain = firstElem;
+
+    for (let i = 1; i < len; i += 1) {
+        const nextElem = firstElem + i * step;
+
+        if (i !== spaceIndex) {
+            progresChain = `${progresChain} ${nextElem}`;
+        } else {
+            progresChain = `${progresChain} ..`;
+            spacedElem = nextElem;
+        }
+    }
+
+    return { chain: progresChain, spaced: spacedElem };
+};
+
 export {
-    sayHello, roundCount, max, min, playerAnswer, getRandom, endGame, gcdRec,
+    sayHello, roundCount, max, min, playerAnswer, getRandom, endGame, gcdRec, getProgression,
 };
