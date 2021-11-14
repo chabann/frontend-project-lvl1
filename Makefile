@@ -10,6 +10,9 @@ brain-even: # исполнение скрипта brain-even.js
 brain-calc: # исполнение скрипта brain-calc.js 
 	node bin/brain-calc.js
 
+brain-gcd: # исполнение скрипта brain-gcd.js 
+	node bin/brain-gcd.js
+
 publish: # проверяет публикацию изменений
 	npm publish --dry-run
 

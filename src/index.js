@@ -37,6 +37,14 @@ const endGame = (counter, playerName) => {
     }
 };
 
+const gcdRec = (a, b) => {
+    if (b) {
+        return gcdRec(b, a % b);
+    }
+
+    return Math.abs(a);
+};
+
 export {
-    sayHello, roundCount, max, min, playerAnswer, getRandom, endGame,
+    sayHello, roundCount, max, min, playerAnswer, getRandom, endGame, gcdRec,
 };
