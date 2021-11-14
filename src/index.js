@@ -68,6 +68,20 @@ const getProgression = (len) => {
     return { chain: progresChain, spaced: spacedElem };
 };
 
+const isPrime = (num) => {
+    let answer = 'yes';
+
+    for (let i = 2; i < num; i += 1) {
+        if (num % i === 0) {
+            answer = 'no';
+            break;
+        }
+    }
+
+    return answer;
+};
+
 export {
-    sayHello, roundCount, max, min, playerAnswer, getRandom, endGame, gcdRec, getProgression,
+    sayHello, roundCount, max, min, playerAnswer, getRandom, endGame, gcdRec,
+    getProgression, isPrime,
 };

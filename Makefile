@@ -16,6 +16,9 @@ brain-gcd: # исполнение скрипта brain-gcd.js
 brain-progression: # исполнение скрипта brain-progression.js 
 	node bin/brain-progression.js
 
+brain-prime: # исполнение скрипта brain-prime.js 
+	node bin/brain-prime.js
+
 publish: # проверяет публикацию изменений
 	npm publish --dry-run
 
