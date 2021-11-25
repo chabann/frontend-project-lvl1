@@ -10,4 +10,4 @@ rules:
   linebreak-style: 0
   no-console: 0
   import/extensions: 0
-  indent: ["error", 4]
+  indent: [2, 2]

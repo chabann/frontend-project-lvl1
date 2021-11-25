@@ -1,34 +1,34 @@
 import {
-    sayHello, roundCount, playerAnswer, getRandom, endGame,
+  sayHello, roundCount, playerAnswer, getRandom, endGame,
 } from '../src/index.js';
 
 const playGame = () => {
-    const playerName = sayHello();
+  const playerName = sayHello();
 
-    console.log('Answer \'yes\' if the number is even, otherwise answer \'no\'');
+  console.log('Answer \'yes\' if the number is even, otherwise answer \'no\'');
 
-    let counter = 0;
-    let correctAnswer = '';
+  let counter = 0;
+  let correctAnswer = '';
 
-    while (counter < roundCount) {
-        const number = getRandom();
+  while (counter < roundCount) {
+    const number = getRandom();
 
-        if (number % 2) {
-            correctAnswer = 'no';
-        } else {
-            correctAnswer = 'yes';
-        }
-
-        const result = playerAnswer(number, correctAnswer, playerName);
-
-        if (result) {
-            counter += 1;
-        } else {
-            break;
-        }
+    if (number % 2) {
+      correctAnswer = 'no';
+    } else {
+      correctAnswer = 'yes';
     }
 
-    endGame(counter, playerName);
+    const result = playerAnswer(number, correctAnswer, playerName);
+
+    if (result) {
+      counter += 1;
+    } else {
+      break;
+    }
+  }
+
+  endGame(counter, playerName);
 };
 
 export default playGame;
