@@ -18,17 +18,17 @@ const playGame = () => {
     const sign = getRandom(0, signs.length);
 
     switch (sign) {
-    case 0:
-      correctAnswer = number1 + number2;
-      break;
-    case 1:
-      correctAnswer = number1 - number2;
-      break;
-    case 2:
-      correctAnswer = number1 * number2;
-      break;
-    default:
-      break;
+      case 0:
+        correctAnswer = number1 + number2;
+        break;
+      case 1:
+        correctAnswer = number1 - number2;
+        break;
+      case 2:
+        correctAnswer = number1 * number2;
+        break;
+      default:
+        break;
     }
 
     const result = playerAnswer(`${number1} ${signs[sign]} ${number2}`, correctAnswer.toString(), playerName);
